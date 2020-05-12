@@ -22,6 +22,6 @@ public class HelloController {
     @PostMapping("/user/{username}")
     @ApiOperation("新增hello用户")
     public User user(@ApiParam("用户名") @PathVariable("username") String username){
-        return  new User(username,"123456");
+        return  new User(1L,username,"123456");
     }
 }
